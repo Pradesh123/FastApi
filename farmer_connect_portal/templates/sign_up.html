@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', path='/css/css_file.css') }}" rel="stylesheet">
+</head>
+<body class="home_body">
+<div class="sign_up_and_in_form">
+    <form action="sign_up_submit" method="post"><br>
+        <label for="username"><strong>Username</strong></label><br><br>
+        <input class="input_tag" id="username" type="text" name="username" placeholder="Your Name..." required><br><br><br>
+        <label for="password"><strong>Password</strong></label><br><br>
+        <input class="input_tag" id="password" type="password" name="password" placeholder="Password" required><br><br><br>
+        <label for="mail_id"><strong>Email ID</strong></label><br><br>
+        <input class="input_tag" id="mail_id" type="email" name="email" placeholder="Your Email id" required><br><br><br>
+        <label for="contact_no"><strong>Contact No</strong></label><br><br>
+        <input class="input_tag" id="contact_no" type="number" name="contact_number" placeholder="Contact No" required><br><br><br>
+        <label for="user_type"><strong>Type Of User</strong></label><br><br>
+        <select class="input_tag" typeof="text" name="user_type" id="user_type">
+          <option value="Farmer">Farmer</option>
+          <option value="Consumer">Consumer</option>
+          <option value="Retailer">Retailer</option>
+        </select><br><br><br><br><br>
+        <input class="button" type="submit" value="submit" name="submit" id="submitButton">
+</form>
+</div>
+</body>
+</html>

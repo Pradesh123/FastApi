@@ -1,0 +1,113 @@
+.button {
+    align-items: center;
+    font-family: 'Arial';
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width:20%;
+    font-weight: bold;
+}
+
+.button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.button:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+.home_body {
+    margin: 0;
+    padding: 0;
+    background: url('../images/home.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* Set text color to white or another contrasting color */
+}
+
+.farmer_post_data_body::before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/store_product.png') no-repeat center center fixed;
+    background-size: cover; /* Optional: Adjust to your needs */
+    opacity: 0.8; /* Set the desired opacity value */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.sign_up_and_in_form{
+    border-radius:5px;
+    background-color: rgba(0, 140, 186, 0.1);
+    position:absolute;
+    margin: 100px;
+    left:30%;
+    width:30%;
+    text-align:center;
+    color:white;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Playfair Display';
+}
+.input_tag{
+    border-radius:30px;
+    border-color:white;
+    width:85%;
+    height:30px;
+    text-align:center;
+}
+.product {
+    border: 1px solid #ddd;
+    width:30%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color:#333333;
+    color:white;
+    font-weight: bold;
+}
+.product_display_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.store_items_quote{
+  text-align:center;
+  color:#04AA6D;
+}
+.payment_form{
+    background-color:#0F52BA;
+    width:50%;
+    text-align:center;
+    margin: auto;
+    padding:10%;
+    border-radius:5px;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    color:white;
+}
+
+<!--        .button {-->
+<!--            background-color: #04AA6D; /* Green */-->
+<!--            border: none;-->
+<!--            color: white;-->
+<!--            padding: 15px 32px;-->
+<!--            text-align: center;-->
+<!--            text-decoration: none;-->
+<!--            display: inline-block;-->
+<!--            font-size: 16px;-->
+<!--        }-->

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', path='/css/css_file.css') }}" rel="stylesheet">
+    <title>connect-farmer.com</title>
+    <style>
+        /* Add your styles for the content here */
+        .content {
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+        .sign_in__sign_up__btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+        }
+
+        input[type="submit"] {
+            margin-left: 20px;
+        }
+
+        .button {
+            width:80%;
+        }
+
+    </style>
+</head>
+<body class="home_body">
+<div class="content">
+        <h1>Welcome to Farmer Connect Portal</h1>
+        <p>Let's connect the city with the village.</p>
+    </div>
+    <div class="sign_in__sign_up__btn">
+        <form action="sign_in" method="post">
+            <input class="button" type="submit" name="Sign-in" value="Sign in"><br><br><br>
+        </form>
+        <form action="sign_up" method="post">
+            <input class="button" type="submit" name="Sign-up" value="Sign up">
+        </form>
+    </div>
+</body>
+</html>

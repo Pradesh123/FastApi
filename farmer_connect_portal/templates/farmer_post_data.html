@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', path='/css/css_file.css') }}" rel="stylesheet">
+    <style>
+        .button{
+            width:150px;
+        }
+    </style>
+</head>
+<body class="farmer_post_data_body">
+<div class="sign_up_and_in_form">
+    <form id="store_items" action="farmer_items_submit" method="post"><br>
+        <label for="product_name"><strong>Product Name</strong></label><br><br>
+        <input list="product_list" class="input_tag" id="product_name" type="text" name="product_name" placeholder="Product Name..."
+               required><br><br><br>
+        <label for="quantity"><strong>Quantity</strong></label><br><br>
+        <input class="input_tag" id="quantity" type="text" name="quantity" placeholder="Quantity" required><br><br><br>
+        <label for="price"><strong>Price</strong></label><br><br>
+        <input class="input_tag" id="price" type="text" name="price" placeholder="Price per kg" required><br><br><br>
+        <label for="location"><strong>Location</strong></label><br><br>
+        <input class="input_tag" id="location" type="text" name="location" placeholder="Product Location"
+               required><br><br><br>
+        <!--    Hidden Input - Farmer ID    -->
+        <input id="farmer_id" type="hidden" name="farmer_id" value={{farmer_id}}><br><br><br>
+        <input class="button" type="submit" value="Post Item" name="submit" id="submitButton">
+    </form>
+</div>
+<datalist id="product_list">
+    <option value="Tomato">
+    <option value="Potato">
+    <option value="Sesame Seeds">
+    <option value="Onion">
+    <option value="Cabbage">
+    <option value="Pumpkin">
+    <option value="Cauliflower">
+    <option value="Beetroot">
+    <option value="Carrot">
+    <option value="Peas">
+</datalist>
+</body>
+</html>

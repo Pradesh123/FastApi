@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', path='/css/css_file.css') }}" rel="stylesheet">
+</head>
+<body class="product_display_body">
+    {% for product in farmer_products %}
+        <div class="product">
+            <form action="/buy" method="post">
+            <p> {{ product.product_name}}</p>
+            <p> {{ product.quantity}}&ensp;KG</p>
+            <p> Rs.&ensp;{{ product.price}}&ensp;/&ensp;kg</p>
+            <p> {{ product.location}}</p>
+                <input type="hidden" name="product" value={{product}}>
+                <input type="hidden" name="current_user_id" value={{current_user_id}}>
+                <input type="hidden" name="user_type" value={{user_type}}>
+            <input class="button" type="submit" value="Buy" name="submit" id="submitButton">
+            </form>
+        </div>
+    {% endfor %}
+</body>
+</html>

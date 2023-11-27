@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', path='/css/css_file.css') }}" rel="stylesheet">
+</head>
+<body>
+<form class="payment_form" action="/payment" method="post">
+    <h4>You're in Payment Page...</h4><br><br>
+    <p>{{farmer_id}} : {{id}} : {{user_type}}</p>
+    <input type="hidden" name="product" value={{product}}>
+    <input type="hidden" name="current_user_id" value={{id}}>
+    <input type="hidden" name="user_type" value={{user_type}}>
+    <input type="hidden" name="farmer_id" value={{farmer_id}}>
+    <input type="hidden" name="product_name" value={{product_name}}>
+    <input type="hidden" name="quantity" value={{quantity}}>
+    <input type="hidden" name="price_per_kg" value={{price_per_kg}}>
+    <input type="hidden" name="location" value={{location}}>
+    <input class="button" type="submit" value="Confirm Payment" name="submit" id="submitButton">
+</form>
+</body>
+</html>
